@@ -15,6 +15,8 @@ flutter:
         default_package: permission_handler_android
       ios:
         default_package: permission_handler_apple
+      macos:
+        default_package: permission_handler_apple
       windows:
         default_package: permission_handler_windows
 
@@ -22,10 +24,26 @@ dependencies:
   flutter:
     sdk: flutter
   meta: ^1.7.0
-  permission_handler_android: ^10.2.0
-  permission_handler_apple: ^9.0.7
-  permission_handler_windows: ^0.1.2
-  permission_handler_platform_interface: ^3.9.0
+  permission_handler_android:
+    git:
+      url: https://github.com/bvoq/flutter-permission-handler.git
+      path: permission_handler_android
+      ref: master
+  permission_handler_apple:
+    git:
+      url: https://github.com/bvoq/flutter-permission-handler.git
+      path: permission_handler_apple
+      ref: master
+  permission_handler_windows:
+    git:
+      url: https://github.com/bvoq/flutter-permission-handler.git
+      path: permission_handler_windows
+      ref: master
+  permission_handler_platform_interface:
+    git:
+      url: https://github.com/bvoq/flutter-permission-handler.git
+      path: permission_handler_platform_interface
+      ref: master
 
 dev_dependencies:
   flutter_lints: ^1.0.4
